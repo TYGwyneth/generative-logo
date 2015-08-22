@@ -1,7 +1,6 @@
 $("#fileUpload").on('change', function () {
 
         if (typeof (FileReader) != "undefined") {
-					console.log("hej");
             // var image_holder = $("#image-holder");
             // image_holder.empty();
 						//
@@ -176,7 +175,10 @@ $("#fileUpload").on('change', function () {
 									// Move the active layer to the center of the view, so all
 									// the created paths in it appear centered.
 									project.activeLayer.position = view.center;
-									downloadAsSVG();
+									//downloadAsSVG();
+                  // var svg = encodeURIComponent(paper.project.exportSVG({asString:true}));
+                  // var blob = new Blob([svg], {type: "image/svg+xml;charset=utf-8"});
+                  // saveAs(blob, 'image.svg');
 								});
 
 								// Move the active layer to the center of the view:
@@ -190,6 +192,10 @@ $("#fileUpload").on('change', function () {
     });
 //*
 
+$("#save").click(function(){
+  downloadAsSVG();
+});
+
 var downloadAsSVG = function (fileName) {
 
    if(!fileName) {
@@ -198,10 +204,13 @@ var downloadAsSVG = function (fileName) {
 
    var url = "data:image/svg+xml;utf8," + encodeURIComponent(paper.project.exportSVG({asString:true}));
 
-	 downloadFile(url);
-
-  //  var link = document.createElement("a");
-  //  link.download = fileName;
-  //  link.href = url;
-  //  link.click();
+   var link = document.createElement("a");
+   link.download = fileName;
+   link.href = url;
+   link.click();
 }
+
+function Download(url) {
+  console.log("hej");
+    document.getElementById('my_iframe').src = url;
+};

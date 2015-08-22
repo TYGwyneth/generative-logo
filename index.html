@@ -3,14 +3,16 @@
 <head>
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/download.min.js"></script>
+<script src="js/Blob.js"></script>
+<script src="js/FileSaver.min.js"></script>
 <!-- Load the Paper.js library -->
 <script type="text/javascript" src="js/paper-full.js"></script>
 <!-- Load external PaperScript and associate it with myCanvas -->
-<script type="text/paperscript" src="js/app.js" canvas="myCanvas">
-</script>
+<script type="text/paperscript" src="js/app.js" canvas="myCanvas"></script>
 </head>
 <body>
 	<canvas id="myCanvas" resize width="1000" height="700"></canvas>
 	<input type='file' id="fileUpload" />
+	<button type="button" id="save">SAVE</button>
 </body>
 </html>
