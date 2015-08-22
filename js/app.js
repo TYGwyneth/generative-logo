@@ -210,7 +210,7 @@ var downloadAsSVG = function (fileName) {
    link.click();
 }
 
-function Download(url) {
-  console.log("hej");
-    document.getElementById('my_iframe').src = url;
-};
+// function Download(url) {
+//   console.log("hej");
+//     document.getElementById('my_iframe').src = url;
+// };
