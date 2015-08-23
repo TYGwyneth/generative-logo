@@ -1,0 +1,39 @@
+html {
+  font-family: "Circular Std"
+}
+
+body {
+
+}
+
+.button {
+  background: transparent;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-style: italic;
+}
+
+#title {
+  //margin: auto;
+  border: 4px solid black;
+  //max-width: 800px;
+}
+
+#pageWrap {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#canvasWrap {
+  border: 4px solid black;
+  padding-bottom: 20px;
+}

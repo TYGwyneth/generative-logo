@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="main.css">
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/download.min.js"></script>
 <script src="js/Blob.js"></script>
@@ -11,8 +12,15 @@
 <script type="text/paperscript" src="js/app.js" canvas="myCanvas"></script>
 </head>
 <body>
-	<canvas id="myCanvas" resize width="1000" height="700"></canvas>
-	<input type='file' id="fileUpload" />
-	<button type="button" id="save">SAVE</button>
+	<div id="pageWrap">
+		<h1 id="title">Akademin Valand - Logo Generator</h1>
+		<div id="canvasWrap">
+			<canvas id="myCanvas" resize max-width="1000" height="500"></canvas>
+			<br>
+			<input type='file' class="button" id="fileUpload" />
+			<button type="button" class="button" id="save">SAVE</button>
+			<a href="index.html"><button type="button" class="button" id="clear">CLEAR</button></a>
+		</div>
+	</div>
 </body>
 </html>
