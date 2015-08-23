@@ -1,3 +1,34 @@
+@font-face {
+    font-family: "Circular Std";
+    src: url("fonts/circularstdbook.ttf");
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url("fonts/circularstdbookitalic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url("fonts/circularstdmedium.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url("fonts/circularstdmediumitalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url("fonts/circularstdbold.ttf");
+    font-weight: bolder;
+}
+
+
 html {
   font-family: "Circular Std"
 }
